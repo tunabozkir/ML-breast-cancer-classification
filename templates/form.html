@@ -47,29 +47,30 @@
     <form action="{{ url_for('predict')}}"method="post">
         <h1 style="color:red;">Enter the value of tumor features >>></h1>
 
-    	<input type="text" name="radius_mean" placeholder="radius mean" required="required" />
-        <input type="text" name="texture_mean" placeholder="texture mean" required="required" />
-		<input type="text" name="smoothness_mean" placeholder="smoothness mean" required="required" />
-		<input type="text" name="compactness_mean" placeholder="compactness mean" required="required" />
-        <input type="text" name="concavity_mean" placeholder="concavity mean" required="required" />
+    	<input type="text" name="radius_mean" placeholder="radius mean (ex: 14.1)" style="width: 300px;" required="required" />
+        <input type="text" name="texture_mean" placeholder="texture mean (ex: 19.2)" style="width: 300px;" required="required" />
+	<input type="text" name="smoothness_mean" placeholder="smoothness mean (ex: 0.09)" style="width: 300px;" required="required" />
+	<input type="text" name="compactness_mean" placeholder="compactness mean (ex: 0.1)" style="width: 300px;" required="required" />
         <br>
-        <input type="text" name="symmetry_mean" placeholder="symmetry mean" required="required" />
-    	<input type="text" name="fractal_dimension_mean" placeholder="fractal dimension mean" required="required" />
-        <input type="text" name="radius_se" placeholder="radius error" required="required" />
-		<input type="text" name="texture_se" placeholder="texture error" required="required" />
-    	<input type="text" name="smoothness_se" placeholder="smoothness error" required="required" />
+        <input type="text" name="concavity_mean" placeholder="concavity mean (ex: 0.08)" style="width: 300px;" required="required" />
+        <input type="text" name="symmetry_mean" placeholder="symmetry mean (ex: 0.18)" style="width: 300px;" required="required" />
+    	<input type="text" name="fractal_dimension_mean" placeholder="fractal dimension mean (ex: 0.06)" style="width: 300px;" required="required" />
+        <input type="text" name="radius_se" placeholder="radius error (ex: 0.4)" style="width: 300px;" required="required" />
         <br>
-        <input type="text" name="compactness_se" placeholder="compactness error" required="required" />
-		<input type="text" name="concavity_se" placeholder="concavity error" required="required" />
-    	<input type="text" name="concave points_se" placeholder="concave points error" required="required" />
-        <input type="text" name="symmetry_se" placeholder="symmetry error" required="required" />
-		<input type="text" name="fractal_dimension_se" placeholder="fractal dimension error" required="required" />
+	<input type="text" name="texture_se" placeholder="texture error (ex: 1.2)" style="width: 300px;" required="required" />
+    	<input type="text" name="smoothness_se" placeholder="smoothness error (ex: 0.007)" style="width: 300px;" required="required" />
+        <input type="text" name="compactness_se" placeholder="compactness error (ex: 0.025)" style="width: 300px;" required="required" />
+	<input type="text" name="concavity_se" placeholder="concavity error (ex: 0.031)" style="width: 300px;" required="required" />
         <br>
-        <input type="text" name="smoothness_worst" placeholder="smoothness worst" required="required" />
-        <input type="text" name="compactness_worst" placeholder="compactness worst" required="required" />
-		<input type="text" name="concavity_worst" placeholder="concavity worst" required="required" />
-    	<input type="text" name="symmetry_worst" placeholder="symmetry worst" required="required" />
-        <input type="text" name="fractal_dimension_worst" placeholder="fractal dimension worst" required="required" />
+    	<input type="text" name="concave points_se" placeholder="concave points error (ex: 0.011)" style="width: 300px;" required="required" />
+        <input type="text" name="symmetry_se" placeholder="symmetry error (ex: 0.02)" style="width: 300px;" required="required" />
+	<input type="text" name="fractal_dimension_se" placeholder="fractal dimension error (ex: 0.003)" style="width: 300px;" required="required" />
+        <input type="text" name="smoothness_worst" placeholder="smoothness worst (ex: 0.13)" style="width: 300px;" required="required" />
+        <br>
+        <input type="text" name="compactness_worst" placeholder="compactness worst (ex: 0.25)" style="width: 300px;" required="required" />
+	<input type="text" name="concavity_worst" placeholder="concavity worst (ex: 0.27)" style="width: 300px;" required="required" />
+    	<input type="text" name="symmetry_worst" placeholder="symmetry worst (ex: 0.29)" style="width: 300px;" required="required" />
+        <input type="text" name="fractal_dimension_worst" placeholder="fractal dimension worst (ex: 0.08)" style="width: 300px;" required="required" />
          <br>
 
         <br>
